@@ -27,7 +27,16 @@
 let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
 
 // Add your code here
-
+myArray.pop();
+myArray.push('Lee');
+myArray.push('Song');
+let myString = '';
+let newArray = [];
+for(let i=0;i<myArray.length;i++){
+  let item = myArray[i];
+  newArray.push(item+' ('+i+')');
+}
+myString = newArray.join(' - ');
 // Don't edit the code below here!
 
 section.innerHTML = ' ';
