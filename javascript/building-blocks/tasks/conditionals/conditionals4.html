@@ -32,7 +32,13 @@ let machineResult;
 let pwdResult;
 
 // Add your code here
-
+if(machineActive){
+  machineResult = "ON";
+  (pwd === 'cheese') ? (pwdResult = "Successful login") : (pwdResult = "Unsuccessful login");
+}
+else {
+  machineResult = "OFF";
+}
 // Don't edit the code below here!
 
 section.innerHTML = ' ';
