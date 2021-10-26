@@ -37,7 +37,7 @@ Inside the `if` part, you need to nest an `if ... else if` structure that puts a
 
 * `score < 0 || score > 100` - "This is not possible, an error has occurred." This could also be done just by an `else` clause, as the scores between 0 and 100 are all covered by the other clauses. But it's nice to be exact.
 * `score >= 0 && score < 20` - "That was a terrible score — total fail!"
-* `score >= 20 && score < 40` - "You know some things, but it's a pretty bad score. Needs improvement."
+* `score >= 20 && score < 40` - "You know some things, but it\'s a pretty bad score. Needs improvement."
 * `score >= 40 && score < 70` — "You did a passable job, not bad!"
 * `score >= 70 && score < 90` — "That\'s a great score, you really know your stuff."
 * `score >= 90 && score <= 100` — "What an amazing score! Did you cheat? Are you for real?"
@@ -55,7 +55,7 @@ if(machineActive) {
   } else if(score >= 0 && score < 20) {
     response = 'That was a terrible score — total fail!';
   } else if(score >= 20 && score < 40) {
-    response = 'You know some things, but it's a pretty bad score. Needs improvement.';
+    response = 'You know some things, but it\'s a pretty bad score. Needs improvement.';
   } else if(score >= 40 && score < 70) {
     response = 'You did a passable job, not bad!';
   } else if(score >= 70 && score < 90) {
