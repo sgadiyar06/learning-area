@@ -28,7 +28,14 @@ let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert',
 let para = document.createElement('p');
 
 // Add your code here
+function random(){
+  return Math.floor(Math.random()*names.length);
+}
+function chooseName(n){
+  return n[random()];
+}
 
+para.textContent  = chooseName(names);
 // Don't edit the code below here!
 
 section.innerHTML = ' ';
