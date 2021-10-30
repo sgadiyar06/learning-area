@@ -30,7 +30,10 @@
     let list = document.createElement('ul');
 
     // Add your code here
-
+    const sect = document.querySelector('section');
+    for(let i=0;i<myArray.length;i++){
+      list.textContent += myArray[i]+' ';
+    }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');

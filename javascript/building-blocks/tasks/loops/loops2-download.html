@@ -42,6 +42,21 @@
     ]
 
     // Add your code here
+    
+    // for(i=0;i<phonebook.length;i++){
+    //   if(name===phonebook[i].name){
+    //     para.textContent = phonebook[i].name + '-' + phonebook[i].number;
+    //     break;
+    //   }
+    // }
+    while(i<=phonebook.length){
+      if(name===phonebook[i].name){
+        para.textContent = phonebook[i].name + "-" + phonebook[i].number;
+        break;
+      }
+      i++;
+    }
+
 
     // Don't edit the code below here!
     let section = document.querySelector('section');
