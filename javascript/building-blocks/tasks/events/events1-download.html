@@ -33,7 +33,15 @@
     let btn = document.querySelector('.off');
 
     // Add your code here
-
+    btn.addEventListener('click',function(){
+if(btn.textContent === "Machine is on") {
+t = "Machine is off";
+}
+else{
+t = "Machine is on";
+}
+btn.textContent = t;
+})
 
   </script>
 

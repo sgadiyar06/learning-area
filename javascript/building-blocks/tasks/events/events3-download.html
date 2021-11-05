@@ -43,7 +43,16 @@
   let buttonBar = document.querySelector('.button-bar');
 
   // Add your code here
+  buttonBar.addEventListener('click',handler);
+var col;
+function handler(e){
+if(e.target.getAttribute('data-color') === 'red') col = 'red';
+else if(e.target.getAttribute('data-color') === 'yellow') col = 'yellow';
+else if(e.target.getAttribute('data-color') === 'green') col = 'green';
+else if(e.target.getAttribute('data-color') === 'purple') col = 'purple';
 
+buttonBar.style.backgroundColor = col;
+}
   </script>
 
 </html>
