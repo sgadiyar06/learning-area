@@ -53,6 +53,16 @@ else if(e.target.getAttribute('data-color') === 'purple') col = 'purple';
 
 buttonBar.style.backgroundColor = col;
 }
+/*
+better solution found in the marking file
+
+buttonBar.addEventListener('click',handler);
+function handler(e){
+  buttonBar.style.backgroundColor = e.target.getAttribute('data-color');
+}
+
+*/
+
   </script>
 
 </html>
