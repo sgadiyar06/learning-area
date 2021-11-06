@@ -29,9 +29,21 @@ let cat = {
   breed : 'Cymric',
   color : 'white',
   greeting: function() {
-    console.log('Meow!');
+    console.log('Hello, said '+this.name+' the '+this.breed+'.');
   }
 }
+let cat2 = {
+  name : 'Pebbles',
+  breed : 'Munchkin',
+  color : 'white',
+  greeting: function() {
+    console.log('Hello, said '+this.name+' the '+this.breed+'.');
+  }
+}
+
+cat.greeting();
+cat2.greeting();
+
     </textarea>
 
     <div class="playable-buttons">
