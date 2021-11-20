@@ -24,7 +24,29 @@
     </section>
 
     <textarea class="playable playable-js" style="height: 220px;">
-
+      class Shape {
+        constructor(name,side,sideLength){
+          this.name = name;
+          this.side = side;
+          this.sideLength = sideLength;
+        };
+        calcPerimeter(){
+          let perimeter = this.side * this.sideLength;
+          console.log('Perimeter of '+ this.name + ' is '+perimeter);
+        }
+      }
+      class Square extends Shape{
+        constructor(sideLength){
+          super('Square',4,sideLength);
+        };
+        calcArea(){
+          let area = this.sideLength * this.sideLength;
+          console.log("Area of the square is "+area);
+        }
+      }
+      let sq1 = new Square(6);
+      sq1.calcArea();
+      sq1.calcPerimeter();
     </textarea>
 
     <div class="playable-buttons">
